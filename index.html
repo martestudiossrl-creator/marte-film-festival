@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marte Film Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Opening Animation -->
+  <div id="loader">
+    <div class="loader-content">
+      <img src="/intro-logo.png" alt="Marte Studios" class="loader-logo">
+      <p class="loader-text">presenta</p>
+    </div>
+  </div>
+
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo-container">
+        <!-- Optional: Add a small logo here if needed, or keep text -->
+        <span style="font-family: 'Outfit'; font-weight: 900; color: var(--accent-color); font-size: 1.5rem;">MFF</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+        <li><a href="legends.html" data-i18n="nav_legends">Leggende</a></li>
+        <li><a href="#program" data-i18n="nav_program">Programma</a></li>
+        <li><a href="#archive" data-i18n="nav_archive">Archivio</a></li>
+        <li><a href="#blog" data-i18n="nav_news">News</a></li>
+        <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 data-i18n="hero_title">MARTE FILM FESTIVAL</h1>
+        <p data-i18n="hero_subtitle">Il cinema che supera i confini del mondo conosciuto.</p>
+        <a href="#program" class="cta-button" data-i18n="hero_cta">Esplora la Selezione</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-i18n="about_title">Missione Spaziale</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-secondary);"
+          data-i18n="about_text">
+          Il Marte Film Festival non è solo un evento, è un'esplorazione. Cerchiamo visioni audaci, storie che sembrano
+          provenire da un'altra galassia. Qui, il cinema indipendente trova il suo pianeta.
+        </p>
+      </div>
+    </section>
+
+    <section id="program" class="section dark-bg">
+      <div class="container">
+        <h2 data-i18n="program_title">Programma 2025</h2>
+        <div class="program-grid">
+          <div class="film-card">
+            <div class="film-image placeholder"></div>
+            <h3>The Red Horizon</h3>
+            <p>Regia di Alan Smithee</p>
+          </div>
+          <div class="film-card">
+            <div class="film-image placeholder"
+              style="background-image: url('https://images.unsplash.com/photo-1506318137071-a8bcbf6755dd?q=80&w=2070&auto=format&fit=crop')">
+            </div>
+            <h3>Dust & Echoes</h3>
+            <p>Regia di Sarah Connor</p>
+          </div>
+          <div class="film-card">
+            <div class="film-image placeholder"
+              style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')">
+            </div>
+            <h3>Zero Gravity</h3>
+            <p>Regia di Ellen Ripley</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="archive" class="section">
+      <div class="container">
+        <h2 data-i18n="archive_title">Archivio Missioni</h2>
+        <div class="archive-list">
+          <div class="archive-item">
+            <h3 data-i18n="archive_2024">Edizione 2024: First Contact</h3>
+            <a href="#" data-i18n="archive_report">Rapporto Missione</a>
+          </div>
+          <div class="archive-item">
+            <h3 data-i18n="archive_2023">Edizione 2023: The Landing</h3>
+            <a href="#" data-i18n="archive_report">Rapporto Missione</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section dark-bg">
+      <div class="container">
+        <h2 data-i18n="blog_title">Trasmissioni</h2>
+        <div class="blog-grid">
+          <article class="blog-post">
+            <h3 data-i18n="blog_post_title">Segnali dallo Spazio Profondo</h3>
+            <p data-i18n="blog_post_text">Abbiamo ricevuto oltre 500 cortometraggi da tutto il sistema solare per questa
+              edizione...</p>
+            <a href="#" class="read-more" data-i18n="blog_read_more">Decodifica Messaggio</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p data-i18n="footer_rights">&copy; 2025 Marte Studios. All Systems Nominal.</p>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">
+          <span data-i18n="footer_contact">Per ogni domanda: </span>
+          <a href="mailto:festival@martestudios.com" style="color: var(--accent-color);">festival@martestudios.com</a>
+        </p>
+        <div class="socials" style="margin-top: 1.5rem;">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">X-Com</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

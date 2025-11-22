@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leggende di Marte | MFF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Specific styles for Legends page */
+        .legends-hero {
+            height: 60vh;
+            background-image: url('https://images.unsplash.com/photo-1614728853911-00874967e23d?q=80&w=2070&auto=format&fit=crop');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .legend-card {
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid var(--accent-color);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legend-card::after {
+            content: 'TOP SECRET';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--accent-color);
+            color: #000;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .legend-title {
+            color: var(--accent-color);
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .legend-card {
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid var(--accent-color);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legend-card::after {
+            content: 'TOP SECRET';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--accent-color);
+            color: #000;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .legend-title {
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .legend-text {
+            font-family: 'Courier New', monospace;
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="/logo.png" alt="MFF Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="legends.html" style="color: var(--accent-color);" data-i18n="nav_legends">Leggende</a></li>
+                <li><a href="index.html#program" data-i18n="nav_program">Programma</a></li>
+                <li><a href="index.html#archive" data-i18n="nav_archive">Archivio</a></li>
+                <li><a href="index.html#blog" data-i18n="nav_news">News</a></li>
+                <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <header class="legends-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 data-i18n="legends_hero_title">Archivi Segreti</h1>
+                <p data-i18n="legends_hero_subtitle">La verità è là fuori... o forse è già qui.</p>
+            </div>
+        </header>
+        <section class="section">
+            <div class="container">
+                <article class="legend-card">
+                    <h2 class="legend-title" data-i18n="legend_cydonia_title">Il Volto di Cydonia</h2>
+                    <div class="legend-text">
+                        <p data-i18n="legend_cydonia_text">Nel 1976,
+                            la sonda Viking 1 scattò una foto che cambiò per sempre la nostra percezione del Pianeta
+                            Rosso. Una formazione rocciosa nella regione di Cydonia sembrava mostrare un volto umanoide.
+                            Pareidolia o vestigia di un'antica civiltà? Gli archivi del MFF contengono
+                            pellicole in 35mm ritrovate nel deserto del Nevada che suggeriscono una connessione
+                            cinematografica...</p>
+                    </div>
+                </article>
+                <article class="legend-card">
+                    <h2 class="legend-title" data-i18n="legend_monolith_title">Il Monolite Fantasma</h2>
+                    <div class="legend-text">
+                        <p data-i18n="legend_monolith_text">Le leggende narrano di un monolite nero,
+                            simile a quello di "2001: Odissea nello Spazio",
+                            che appare e scompare nelle tempeste di sabbia marziane. Si dice che chiunque lo guardi
+                            attraverso l'obiettivo di una cinepresa veda il proprio futuro. Un regista scomparso nel
+                            1999 affermò di averlo filmato.</p>
+                    </div>
+                </article>
+                <article class="legend-card">
+                    <h2 class="legend-title" data-i18n="legend_432hz_title">La Frequenza 432Hz</h2>
+                    <div class="legend-text">
+                        <p data-i18n="legend_432hz_text">Si dice che le antiche civiltà marziane comunicassero non con
+                            parole,
+                            ma con frequenze sonore pure. Alcuni sound designer sostengono di aver captato segnali a
+                            432Hz provenire dalle registrazioni ambientali dei rover. È la colonna sonora dell'universo?
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p data-i18n="footer_classified">&copy;
+                    2025 Marte Studios. Classified Information.</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">
+                    <span data-i18n="footer_contact">Per ogni domanda: </span>
+                    <a href="mailto:festival@martestudios.com"
+                        style="color: var(--accent-color);">festival@martestudios.com</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
